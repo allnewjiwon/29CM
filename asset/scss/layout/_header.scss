@@ -10,9 +10,9 @@
   &.hide{
     transform: translateY(-100%);
   }
-  &.on{
-    background: transparent;
-  }
+  // &.on{
+  //   background: transparent;
+  // }
   .flex-wrap{
     display: flex;
     align-items: center;

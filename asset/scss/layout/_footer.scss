@@ -99,15 +99,16 @@
 
       }
     }
-    .credit{
-      .link-credit{
-        display: flex;
-        align-items: center;
+    .right{
+      display: flex;
+      align-items: center;
         .img-box{
+          display: flex;
+          align-items: center;
           margin-right: 0.7vw;
           width: 1.8vw;
         }
-      }
+      
     }
   }
   

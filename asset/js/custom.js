@@ -6,14 +6,14 @@ $(function(){
 
   $(window).scroll(function () {
     curr = $(this).scrollTop();
-    here = $('.sc-intro').offset().top;
+    // here = $('.sc-intro').offset().top;
 
 
-    if (curr >= here) {
-      $('header').addClass('on');
-    } else {
-      $('header').removeClass('on');
-    }
+    // if (curr >= here) {
+    //   $('header').addClass('on');
+    // } else {
+    //   $('header').removeClass('on');
+    // }
 
     if (curr > lastScroll) {
       $('header').addClass('hide');
@@ -182,11 +182,11 @@ $(function(){
    * @공용으로 클레스만 맞춰서 쓰세요
    * 
    */
-  // gsap.set('.recipe .headline',{xPercent:-100})
+  
 
   // 7. 헤드라인 텍스트 스크럽 모션 (공통)
 
-  gsap.utils.toArray('.recipe .headline').forEach(element => {
+  gsap.utils.toArray('.feed .headline').forEach(element => {
     gsap.to(element,{
       scrollTrigger:{
         trigger:element.parentElement,
@@ -198,42 +198,9 @@ $(function(){
       xPercent:-100,
     })
   });
-  // gsap.to('.recipe .headline',20,{
+
     
-  //   scrollTrigger:{
-  //     trigger:'.recipe .txt-flow',
-  //     start:"0% 100%", //[트리거기준 꼭대기] [윈도우좌표 꼭대기]
-  //     end:"100% 0%", //[트리거기준 꼭대기] [윈도우좌표 꼭대기]
-  //     // markers:true,
-  //     scrub: 1,
-  //   },
-  //   xPercent:-100,
-  //   // repeat:-1,
-  //   // ease:'none',
-  //   // paused:true,
-  // })
-  // const rightMotion = gsap.to('.recipe .headline',5,{
-  //   xPercent:-200,
-  //   xPercent:-200, 
-  //   repeat:-1,
-  //   ease:'none',
-  //   paused:true,
-  // })
 
-
-  // let lastScroll = 0;
-  // $(window).scroll(function(){
-  //   curr = $(this).scrollTop();
-  //   if(curr > lastScroll){
-  //     rightMotion.pause()
-  //     leftMotion.play()
-  //   }else{
-  //     // console.log('111');
-  //     leftMotion.pause()
-  //     rightMotion.play()
-  //   }
-  //   lastScroll = curr;
-  // })
 
 
   /***
@@ -409,15 +376,15 @@ $('.steps-list.scroll').each(function(i,el){
 })
 
 
-// 12. recipe-footer 텍스트 스크롤 모션
+// 12. feed-footer 텍스트 스크롤 모션
 
-gsap.set('.recipe-footer .link-facebook .link-txt',{opacity:0 , yPercent:100})
-// gsap.set('.recipe-footer .link-line',{width:'0%'})
-$('.recipe-footer .link-facebook.scroll').each(function(i,el){
+gsap.set('.feed-footer .link-facebook .link-txt',{opacity:0 , yPercent:100})
+
+$('.feed-footer .link-facebook.scroll').each(function(i,el){
   parentEl = $(this).parents('.scroll-parent');
   txtEl =  $(this).find('.link-txt');
   lineEl = $(this).find('.link-line')
-  const recipeFooter= gsap.timeline({
+  const feedFooter= gsap.timeline({
     scrollTrigger: {
       trigger: parentEl,
       start: '0% 50%',
@@ -425,7 +392,7 @@ $('.recipe-footer .link-facebook.scroll').each(function(i,el){
       // markers: true,
     },
   })
-  recipeFooter
+  feedFooter
   .addLabel('a')
   .to(txtEl,{
     duration: .8,

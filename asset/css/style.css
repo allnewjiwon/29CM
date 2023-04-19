@@ -248,11 +248,13 @@ body {
   position: relative;
   top: 0.4vw;
 }
-.footer .copy-area .credit .link-credit {
+.footer .copy-area .right {
   display: flex;
   align-items: center;
 }
-.footer .copy-area .credit .link-credit .img-box {
+.footer .copy-area .right .img-box {
+  display: flex;
+  align-items: center;
   margin-right: 0.7vw;
   width: 1.8vw;
 }
@@ -268,9 +270,6 @@ body {
 }
 .header.hide {
   transform: translateY(-100%);
-}
-.header.on {
-  background: transparent;
 }
 .header .flex-wrap {
   display: flex;
@@ -523,138 +522,138 @@ body {
           clip-path: circle(20% at 50% 100%);
 }
 
-.recipe {
+.feed {
   position: relative;
 }
-.recipe .txt-flow {
+.feed .txt-flow {
   padding-top: 8.5vw;
   display: flex;
   overflow: hidden;
 }
-.recipe .txt-flow .headline {
+.feed .txt-flow .headline {
   padding: 0 4.8vw;
 }
-.recipe .group-grid {
+.feed .group-grid {
   display: grid;
   grid-template-columns: 1.5fr 1.3fr;
 }
-.recipe .group-grid .column-left {
+.feed .group-grid .column-left {
   margin-top: 6vw;
   padding: 0 0 0 8.2vw;
 }
-.recipe .group-grid .column-left .note {
+.feed .group-grid .column-left .note {
   text-transform: uppercase;
   padding: 8vw 24.6vw 0 0;
   font-size: 0.97vw;
 }
-.recipe .group-grid .column-left .note::before {
+.feed .group-grid .column-left .note::before {
   content: "*";
   display: block;
   font-family: "NeueWorld", sans-serif;
   line-height: 0.4;
   font-size: 4vw;
 }
-.recipe .group-grid .column-right {
+.feed .group-grid .column-right {
   margin-top: 23vw;
   padding: 0 5vw;
 }
-.recipe .group-grid .column-right .title {
+.feed .group-grid .column-right .title {
   padding-bottom: 1.4vw;
 }
-.recipe .group-grid .column-right .wrap .desc:not(:first-child) {
+.feed .group-grid .column-right .wrap .desc:not(:first-child) {
   margin-top: 2vw;
 }
-.recipe .group-grid .desc {
+.feed .group-grid .desc {
   line-height: 1.7;
   font-size: 1vw;
   padding-top: 2vw;
 }
-.recipe .group-grid .desc span {
+.feed .group-grid .desc span {
   display: block;
 }
-.recipe .group-grid .desc-tit {
+.feed .group-grid .desc-tit {
   margin-bottom: 1.2vw;
   font-size: 1.5vw;
   font-style: italic;
   display: block;
 }
-.recipe .dispersion-images {
+.feed .dispersion-images {
   height: 40vw;
   position: relative;
   z-index: -1;
 }
-.recipe .dispersion-images .img-box {
+.feed .dispersion-images .img-box {
   position: absolute;
   overflow: hidden;
   scale: 0.7;
 }
-.recipe .dispersion-images .img-box.d1 {
+.feed .dispersion-images .img-box.d1 {
   width: 20vw;
   top: 0;
   left: 12vw;
   z-index: 100;
 }
-.recipe .dispersion-images .img-box.d2 {
+.feed .dispersion-images .img-box.d2 {
   width: 28vw;
   left: 30vw;
   top: 15vw;
   z-index: 90;
 }
-.recipe .dispersion-images .img-box.d3 {
+.feed .dispersion-images .img-box.d3 {
   width: 20vw;
   right: 25vw;
   z-index: 80;
 }
-.recipe .dispersion-images .img-box.d4 {
+.feed .dispersion-images .img-box.d4 {
   width: 20vw;
   right: 10vw;
   top: 20vw;
 }
-.recipe .dispersion-images .img-box img {
+.feed .dispersion-images .img-box img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.recipe .steps {
+.feed .steps {
   padding: 6.25vw 12.5vw 0 7.7vw;
 }
-.recipe .steps .steps-list {
+.feed .steps .steps-list {
   padding: 3vw 0 0 4.8vw;
 }
-.recipe .steps .steps-list span {
+.feed .steps .steps-list span {
   width: 0%;
   background: #fff;
   height: 1px;
   display: block;
 }
-.recipe .steps .steps-list .steps-item {
+.feed .steps .steps-list .steps-item {
   position: relative;
   display: flex;
   align-items: center;
   line-height: 1.6;
   padding: 1vw 0;
 }
-.recipe .steps .steps-list .steps-item .method {
+.feed .steps .steps-list .steps-item .method {
   font-size: 1.73vw;
   padding-left: 3vw;
   text-transform: uppercase;
 }
-.recipe .recipe-footer {
+.feed .feed-footer {
   padding: 12vw 0vw 2vw 64vw;
 }
-.recipe .recipe-footer .link-facebook .overflow-hidden .link-line {
+.feed .feed-footer .link-facebook .overflow-hidden .link-line {
   width: 0%;
   height: 2px;
   background: #fff;
   display: block;
 }
-.recipe .recipe-footer .link-facebook .link-txt {
+.feed .feed-footer .link-facebook .link-txt {
   display: inline-block;
   position: relative;
   padding-bottom: 5px;
 }
-.recipe .recipe-footer .link-facebook:hover .link-line {
+.feed .feed-footer .link-facebook:hover .link-line {
   background: rgba(255, 255, 255, 0.5);
 }
 
